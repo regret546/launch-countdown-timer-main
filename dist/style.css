@@ -559,3 +559,97 @@ html {
   --tw-contain-paint:  ;
   --tw-contain-style:  ;
 }
+
+.absolute{
+  position: absolute;
+}
+
+.relative{
+  position: relative;
+}
+
+.bottom-0{
+  bottom: 0px;
+}
+
+.z-10{
+  z-index: 10;
+}
+
+.grid{
+  display: grid;
+}
+
+.size-full{
+  width: 100%;
+  height: 100%;
+}
+
+.max-h-\[230px\]{
+  max-height: 230px;
+}
+
+.min-h-\[100vh\]{
+  min-height: 100vh;
+}
+
+.place-items-center{
+  place-items: center;
+}
+
+.bg-\[url\(\'\/images\/bg-stars\.svg\'\)\]{
+  background-image: url('/images/bg-stars.svg');
+}
+
+.bg-\[url\(\'\/images\/pattern-hills\.svg\'\)\]{
+  background-image: url('/images/pattern-hills.svg');
+}
+
+.bg-gradient-to-b{
+  background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+}
+
+.from-mostly-dark-blue{
+  --tw-gradient-from: hsl(234, 17%, 12%) var(--tw-gradient-from-position);
+  --tw-gradient-to: hsl(234 17% 12% / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.via-very-dark-blue{
+  --tw-gradient-to: hsl(235 16% 14% / 0)  var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), hsl(235, 16%, 14%) var(--tw-gradient-via-position), var(--tw-gradient-to);
+}
+
+.to-dark-desaturated-blue{
+  --tw-gradient-to: hsl(236, 21%, 26%) var(--tw-gradient-to-position);
+}
+
+.to-kinda-red{
+  --tw-gradient-to: hsl(350, 35%, 13%) var(--tw-gradient-to-position);
+}
+
+.bg-cover{
+  background-size: cover;
+}
+
+.bg-no-repeat{
+  background-repeat: no-repeat;
+}
+
+.text-2xl{
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.font-fw-bold{
+  font-weight: 700;
+}
+
+.tracking-\[0\.5rem\]{
+  letter-spacing: 0.5rem;
+}
+
+.text-white{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}

@@ -11,7 +11,8 @@ module.exports = {
         /*  Neutral */
         "dark-desaturated-blue": "hsl(236, 21%, 26%)",
         "very-dark-blue": "hsl(235, 16%, 14%)",
-        "mostly-dark-blue": "blue: hsl(234, 17%, 12%)",
+        "mostly-dark-blue": "hsl(234, 17%, 12%)",
+        "kinda-red": "hsl(350, 35%, 13%)",
       },
       fontWeight: {
         "fw-bold": 700,

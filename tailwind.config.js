@@ -17,6 +17,12 @@ module.exports = {
       fontWeight: {
         "fw-bold": 700,
       },
+      screens: {
+        "max-xm": { max: "310px" }, // Custom extra small breakpoint
+      },
+      gridTemplateColumns: {
+        "fill-minmax": "repeat(auto-fill, minmax(min(200px, 100%), 1fr))",
+      },
     },
   },
   plugins: [],

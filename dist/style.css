@@ -580,6 +580,10 @@ html {
   right: 0px;
 }
 
+.top-0{
+  top: 0px;
+}
+
 .top-1\/2{
   top: 50%;
 }
@@ -588,16 +592,16 @@ html {
   z-index: 10;
 }
 
-.z-20{
-  z-index: 20;
-}
-
 .z-30{
   z-index: 30;
 }
 
-.z-50{
-  z-index: 50;
+.z-\[100\]{
+  z-index: 100;
+}
+
+.m-4{
+  margin: 1rem;
 }
 
 .flex{
@@ -629,6 +633,10 @@ html {
   width: 100%;
 }
 
+.flex-1{
+  flex: 1 1 0%;
+}
+
 .-translate-y-1\/2{
   --tw-translate-y: -50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -636,6 +644,14 @@ html {
 
 .transform{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.grid-cols-1{
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.grid-cols-fill-minmax{
+  grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr));
 }
 
 .place-items-center{
@@ -668,6 +684,10 @@ html {
 
 .rounded-xl{
   border-radius: 0.75rem;
+}
+
+.border-t-\[1px\]{
+  border-top-width: 1px;
 }
 
 .border-mostly-dark-blue{
@@ -715,18 +735,21 @@ html {
   background-repeat: no-repeat;
 }
 
-.p-6{
-  padding: 1.5rem;
+.p-4{
+  padding: 1rem;
 }
 
-.text-2xl{
-  font-size: 1.5rem;
-  line-height: 2rem;
+.text-center{
+  text-align: center;
 }
 
-.text-7xl{
-  font-size: 4.5rem;
-  line-height: 1;
+.text-3xl{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-\[2rem\]{
+  font-size: 2rem;
 }
 
 .text-xs{
@@ -740,10 +763,6 @@ html {
 
 .tracking-\[0\.2rem\]{
   letter-spacing: 0.2rem;
-}
-
-.tracking-\[0\.5rem\]{
-  letter-spacing: 0.5rem;
 }
 
 .text-grayish-blue{
@@ -761,9 +780,9 @@ html {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.shadow-\[0px_10px_1px_rgba\(221\2c _221\2c _221\2c _1\)\2c _0_5px_20px_rgba\(204\2c _204\2c _204\2c _1\)\]{
-  --tw-shadow: 0px 10px 1px rgba(221, 221, 221, 1), 0 5px 20px rgba(204, 204, 204, 1);
-  --tw-shadow-colored: 0px 10px 1px var(--tw-shadow-color), 0 5px 20px var(--tw-shadow-color);
+.shadow-\[0px_7px_1px_rgba\(221\2c _221\2c _221\2c _1\)\2c _0_5px_20px_rgba\(204\2c _204\2c _204\2c _1\)\]{
+  --tw-shadow: 0px 7px 1px rgba(221, 221, 221, 1), 0 5px 20px rgba(204, 204, 204, 1);
+  --tw-shadow-colored: 0px 7px 1px var(--tw-shadow-color), 0 5px 20px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
@@ -777,7 +796,19 @@ html {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
-.divider-right {
+.drop-shadow-2xl{
+  --tw-drop-shadow: drop-shadow(0 25px 25px rgb(0 0 0 / 0.15));
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.inset-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.pin-right {
   position: absolute;
   content: "";
   width: 5%;
@@ -788,7 +819,7 @@ html {
   background-color: hsl(234, 17%, 12%);
 }
 
-.divider-left {
+.pin-left {
   position: absolute;
   content: "";
   width: 5%;
@@ -797,4 +828,32 @@ html {
   right: 0;
   border-radius: 0% 50% 50% 0%;
   background-color: hsl(234, 17%, 12%);
+}
+
+@media (min-width: 768px){
+  .md\:p-6{
+    padding: 1.5rem;
+  }
+
+  .md\:shadow-\[0px_10px_1px_rgba\(221\2c _221\2c _221\2c _1\)\2c _0_5px_20px_rgba\(204\2c _204\2c _204\2c _1\)\]{
+    --tw-shadow: 0px 10px 1px rgba(221, 221, 221, 1), 0 5px 20px rgba(204, 204, 204, 1);
+    --tw-shadow-colored: 0px 10px 1px var(--tw-shadow-color), 0 5px 20px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .md\:shadow-mostly-dark-blue{
+    --tw-shadow-color: hsl(234, 17%, 12%);
+    --tw-shadow: var(--tw-shadow-colored);
+  }
+}
+
+@media (max-width: 310px){
+  .max-xm\:p-3{
+    padding: 0.75rem;
+  }
+
+  .max-xm\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
 }

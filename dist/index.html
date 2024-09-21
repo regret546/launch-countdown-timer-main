@@ -27,7 +27,7 @@
   </head>
   <body>
     <main
-      class="relative w-full grid place-items-center min-h-[100vh] bg-cover bg-gradient-to-b from-mostly-dark-blue via-very-dark-blue to-kinda-red"
+      class="relative w-full grid place-items-center p-2 min-h-[100vh] bg-cover bg-gradient-to-b from-mostly-dark-blue via-very-dark-blue to-kinda-red"
     >
       <div
         class="stars absolute bg-[url('/images/bg-stars.svg')] bg-cover size-full"
@@ -36,7 +36,7 @@
         class="hills absolute size-full max-h-[230px] bottom-0 bg-no-repeat bg-cover bg-[url('/images/pattern-hills.svg')]"
       ></div>
 
-      <div class="grid justify-items-center gap-16 m-4">
+      <div class="grid justify-items-center gap-16 m-4 w-full md:max-w-[800px]">
         <section class="header_section">
           <h1
             class="text-white font-fw-bold text-[2rem] tracking-[0.3rem] md:tracking-[0.5rem] md:text-[1.5rem] text-center"
@@ -48,13 +48,13 @@
           class="countdown_section flex justify-center md:gap-6 gap-4 z-10 w-full"
         >
           <div
-            class="card grid justify-items-center gap-4 max-xm:max-w-[50px] md:max-w-[150px] w-full max-w-[80px]"
+            class="card grid justify-items-center gap-4 max-xm:max-w-[50px] md:max-w-[150px] md:h-full w-full max-w-[80px]"
           >
             <div
-              class="w-full grid place-items-center text-3xl md:text-7xl font-fw-bold text-soft-red px-2 py-4 md:p-6 max-xm:text-2xl bg-dark-desaturated-blue rounded-xl relative overflow-hidden z-30 md:shadow-[0px_10px_1px_rgba(221,_221,_221,_1),_0_5px_20px_rgba(204,_204,_204,_1)] shadow-[0px_7px_1px_rgba(221,_221,_221,_1),_0_5px_20px_rgba(204,_204,_204,_1)] shadow-mostly-dark-blue md:shadow-mostly-dark-blue"
+              class="w-full grid place-items-center text-3xl md:text-7xl font-fw-bold text-soft-red px-2 py-4 md:p-6 max-xm:text-2xl rounded-xl relative overflow-hidden z-30 md:shadow-[0px_10px_1px_rgba(221,_221,_221,_1),_0_5px_20px_rgba(204,_204,_204,_1)] shadow-[0px_7px_1px_rgba(221,_221,_221,_1),_0_5px_20px_rgba(204,_204,_204,_1)] shadow-mostly-dark-blue md:shadow-mostly-dark-blue"
             >
               <div
-                class="top-card w-full h-1/2 bg-dark-desaturated-blue absolute top-0 left-0"
+                class="top-card w-full absolute animate-flip-down h-1/2 bg-dark-desaturated-blue top-0 left-0"
               ></div>
               <div
                 class="bottom-card w-full h-1/2 brightness-[1.3] bg-dark-desaturated-blue absolute left-0 bottom-0"
@@ -62,7 +62,7 @@
               <div
                 class="divider w-full inset-center border-t-[1px] drop-shadow-2xl border-mostly-dark-blue"
               ></div>
-              <h1 id="countDays" class="relative">08</h1>
+              <h1 id="countDays" class="relative animate-flip-down">8</h1>
               <div
                 class="pin-left absolute top-1/2 left-0 transform -translate-y-1/2"
               ></div>
@@ -81,7 +81,7 @@
             class="card grid justify-items-center gap-4 max-xm:max-w-[50px] md:max-w-[150px] w-full max-w-[80px]"
           >
             <div
-              class="w-full grid place-items-center text-3xl md:text-7xl font-fw-bold text-soft-red px-2 py-4 md:p-6 max-xm:text-2xl bg-dark-desaturated-blue rounded-xl relative overflow-hidden z-30 md:shadow-[0px_10px_1px_rgba(221,_221,_221,_1),_0_5px_20px_rgba(204,_204,_204,_1)] shadow-[0px_7px_1px_rgba(221,_221,_221,_1),_0_5px_20px_rgba(204,_204,_204,_1)] shadow-mostly-dark-blue md:shadow-mostly-dark-blue"
+              class="w-full grid place-items-center text-3xl md:text-7xl font-fw-bold text-soft-red px-2 py-4 md:p-6 max-xm:text-2xl rounded-xl relative overflow-hidden z-30 md:shadow-[0px_10px_1px_rgba(221,_221,_221,_1),_0_5px_20px_rgba(204,_204,_204,_1)] shadow-[0px_7px_1px_rgba(221,_221,_221,_1),_0_5px_20px_rgba(204,_204,_204,_1)] shadow-mostly-dark-blue md:shadow-mostly-dark-blue"
             >
               <div
                 class="top-card w-full h-1/2 bg-dark-desaturated-blue absolute top-0 left-0"
@@ -111,7 +111,7 @@
             class="card grid justify-items-center gap-4 max-xm:max-w-[50px] md:max-w-[150px] w-full max-w-[80px]"
           >
             <div
-              class="w-full relative grid place-items-center text-3xl md:text-7xl font-fw-bold text-soft-red px-2 py-4 md:p-6 max-xm:text-2xl bg-dark-desaturated-blue rounded-xl overflow-hidden z-30 md:shadow-[0px_10px_1px_rgba(221,_221,_221,_1),_0_5px_20px_rgba(204,_204,_204,_1)] shadow-[0px_7px_1px_rgba(221,_221,_221,_1),_0_5px_20px_rgba(204,_204,_204,_1)] shadow-mostly-dark-blue md:shadow-mostly-dark-blue"
+              class="w-full relative grid place-items-center text-3xl md:text-7xl font-fw-bold text-soft-red px-2 py-4 md:p-6 max-xm:text-2xl rounded-xl overflow-hidden z-30 md:shadow-[0px_10px_1px_rgba(221,_221,_221,_1),_0_5px_20px_rgba(204,_204,_204,_1)] shadow-[0px_7px_1px_rgba(221,_221,_221,_1),_0_5px_20px_rgba(204,_204,_204,_1)] shadow-mostly-dark-blue md:shadow-mostly-dark-blue"
             >
               <div
                 class="top-card w-full h-1/2 bg-dark-desaturated-blue absolute top-0 left-0"
@@ -141,7 +141,7 @@
             class="card grid justify-items-center max-xm:max-w-[50px] gap-4 md:max-w-[150px] w-full max-w-[80px]"
           >
             <div
-              class="w-full grid place-items-center text-3xl md:text-7xl font-fw-bold text-soft-red px-2 py-4 md:p-6 max-xm:text-2xl bg-dark-desaturated-blue rounded-xl relative overflow-hidden z-30 md:shadow-[0px_10px_1px_rgba(221,_221,_221,_1),_0_5px_20px_rgba(204,_204,_204,_1)] shadow-[0px_7px_1px_rgba(221,_221,_221,_1),_0_5px_20px_rgba(204,_204,_204,_1)] shadow-mostly-dark-blue md:shadow-mostly-dark-blue"
+              class="w-full grid place-items-center text-3xl md:text-7xl font-fw-bold text-soft-red px-2 py-4 md:p-6 max-xm:text-2xl rounded-xl relative overflow-hidden z-30 md:shadow-[0px_10px_1px_rgba(221,_221,_221,_1),_0_5px_20px_rgba(204,_204,_204,_1)] shadow-[0px_7px_1px_rgba(221,_221,_221,_1),_0_5px_20px_rgba(204,_204,_204,_1)] shadow-mostly-dark-blue md:shadow-mostly-dark-blue"
             >
               <div
                 class="top-card w-full h-1/2 bg-dark-desaturated-blue absolute top-0 left-0"
@@ -152,7 +152,7 @@
               <div
                 class="divider w-full inset-center border-t-[1px] drop-shadow-2xl border-mostly-dark-blue"
               ></div>
-              <h1 id="count" class="relative">41</h1>
+              <h1 id="countSeconds" class="relative">41</h1>
               <div
                 class="pin-left absolute top-1/2 left-0 transform -translate-y-1/2"
               ></div>
@@ -176,5 +176,6 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
     </div> -->
+    <script src="/dist/js/app.js"></script>
   </body>
 </html>

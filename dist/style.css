@@ -617,20 +617,12 @@ html {
   height: 50%;
 }
 
-.h-full{
-  height: 100%;
-}
-
 .max-h-\[230px\]{
   max-height: 230px;
 }
 
 .min-h-\[100vh\]{
   min-height: 100vh;
-}
-
-.min-h-full{
-  min-height: 100%;
 }
 
 .w-full{
@@ -648,6 +640,24 @@ html {
 
 .transform{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+@keyframes flip-down{
+  0{
+    transform: rotateX(0deg);
+  }
+
+  50%{
+    transform: rotateX(-90deg);
+  }
+
+  100%{
+    transform: rotateX(0deg);
+  }
+}
+
+.animate-flip-down{
+  animation: flip-down 3000ms ease-in-out;
 }
 
 .place-items-center{
@@ -725,6 +735,10 @@ html {
 
 .bg-no-repeat{
   background-repeat: no-repeat;
+}
+
+.p-2{
+  padding: 0.5rem;
 }
 
 .px-2{
@@ -832,12 +846,16 @@ html {
 }
 
 @media (min-width: 768px){
-  .md\:w-full{
-    width: 100%;
+  .md\:h-full{
+    height: 100%;
   }
 
   .md\:max-w-\[150px\]{
     max-width: 150px;
+  }
+
+  .md\:max-w-\[800px\]{
+    max-width: 800px;
   }
 
   .md\:gap-6{
@@ -879,25 +897,13 @@ html {
 }
 
 @media (max-width: 310px){
-  .max-xm\:w-full{
-    width: 100%;
-  }
-
   .max-xm\:max-w-\[50px\]{
     max-width: 50px;
-  }
-
-  .max-xm\:bg-contain{
-    background-size: contain;
   }
 
   .max-xm\:text-2xl{
     font-size: 1.5rem;
     line-height: 2rem;
-  }
-
-  .max-xm\:text-\[0\.3rem\]{
-    font-size: 0.3rem;
   }
 
   .max-xm\:text-\[0\.4rem\]{

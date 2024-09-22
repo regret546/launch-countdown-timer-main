@@ -39,33 +39,57 @@ function updateDuration() {
     const currentMinutes = Math.floor((gap % hour) / minute);
     const currentSeconds = Math.floor((gap % minute) / second);
 
-    // Detect changes in days, hours, minutes, seconds
+    // Detect changes in days, hours, minutes, seconds and add animation
     if (currentSeconds !== prevSeconds) {
-      console.log("Seconds changed");
       seconds.innerText = currentSeconds;
       prevSeconds = currentSeconds;
+      flipDown(seconds.closest(".card").querySelector("#topCard"), seconds);
     }
 
     if (currentMinutes !== prevMinutes) {
       console.log("Minutes changed");
       minutes.innerText = currentMinutes;
       prevMinutes = currentMinutes;
+      flipDown(minutes.closest(".card").querySelector("#topCard"), minutes);
     }
 
     if (currentHours !== prevHours) {
       console.log("Hours changed");
       hours.innerText = currentHours;
       prevHours = currentHours;
+      flipDown(hours.closest(".card").querySelector("#topCard"), hours);
     }
 
     if (currentDays !== prevDays) {
       console.log("Days changed");
       days.innerText = currentDays;
       prevDays = currentDays;
+      flipDown(days.closest(".card").querySelector("#topCard"), days);
     }
   }
 
   const interval = setInterval(updateCountdown, 1000);
+}
+
+function flipDown(cardTop, cardNumContainer) {
+  cardTop.classList.add("animate-flip-down");
+  cardNumContainer.classList.add("animate-flip-down");
+
+  cardTop.addEventListener(
+    "animationend",
+    function () {
+      cardTop.classList.remove("animate-flip-down");
+    },
+    { once: true }
+  );
+
+  cardNumContainer.addEventListener(
+    "animationend",
+    function () {
+      cardNumContainer.classList.remove("animate-flip-down");
+    },
+    { once: true }
+  );
 }
 
 // Start the countdown

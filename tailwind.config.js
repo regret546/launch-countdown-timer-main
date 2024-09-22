@@ -40,10 +40,10 @@ module.exports = {
 
         "flip-up": {
           0: {
-            transform: "rotateX(45deg)",
+            transform: "rotateX(0deg)",
           },
           "50%": {
-            transform: "rotateX(90deg)",
+            transform: "rotateX(180deg)",
           },
 
           "100%": {
@@ -53,8 +53,8 @@ module.exports = {
       },
 
       animation: {
-        "flip-down": "flip-down 3000ms ease-in-out",
-        "flip-up": "flip-up 300ms ease-in-out",
+        "flip-down": "flip-down 300ms ease-in-out",
+        "flip-up": "flip-up 2000ms ease-in-out",
       },
     },
   },

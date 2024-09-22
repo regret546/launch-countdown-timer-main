@@ -642,24 +642,6 @@ html {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-@keyframes flip-down{
-  0{
-    transform: rotateX(0deg);
-  }
-
-  50%{
-    transform: rotateX(-90deg);
-  }
-
-  100%{
-    transform: rotateX(0deg);
-  }
-}
-
-.animate-flip-down{
-  animation: flip-down 3000ms ease-in-out;
-}
-
 .place-items-center{
   place-items: center;
 }
@@ -760,12 +742,27 @@ html {
   line-height: 2.25rem;
 }
 
+.text-5xl{
+  font-size: 3rem;
+  line-height: 1;
+}
+
 .text-\[0\.5rem\]{
   font-size: 0.5rem;
 }
 
 .text-\[2rem\]{
   font-size: 2rem;
+}
+
+.text-xs{
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.text-xl{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .font-fw-bold{

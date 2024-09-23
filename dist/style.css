@@ -588,6 +588,18 @@ html {
   top: 50%;
 }
 
+.bottom-\[100px\]{
+  bottom: 100px;
+}
+
+.bottom-\[80px\]{
+  bottom: 80px;
+}
+
+.bottom-\[70px\]{
+  bottom: 70px;
+}
+
 .z-10{
   z-index: 10;
 }
@@ -682,6 +694,10 @@ html {
   animation: flip-down-forNum 400ms ease-in-out;
 }
 
+.cursor-pointer{
+  cursor: pointer;
+}
+
 .place-items-center{
   place-items: center;
 }
@@ -700,6 +716,14 @@ html {
 
 .gap-4{
   gap: 1rem;
+}
+
+.gap-3{
+  gap: 0.75rem;
+}
+
+.gap-6{
+  gap: 1.5rem;
 }
 
 .overflow-hidden{
@@ -794,6 +818,10 @@ html {
   font-weight: 700;
 }
 
+.font-bold{
+  font-weight: 700;
+}
+
 .tracking-\[0\.2rem\]{
   letter-spacing: 0.2rem;
 }
@@ -865,6 +893,35 @@ html {
   right: 0;
   border-radius: 0% 50% 50% 0%;
   background-color: hsl(234, 17%, 12%);
+}
+
+.hover\:fill-red-50:hover{
+  fill: #fef2f2;
+}
+
+.hover\:fill-red-500:hover{
+  fill: #ef4444;
+}
+
+.hover\:fill-mostly-dark-blue:hover{
+  fill: hsl(234, 17%, 12%);
+}
+
+.hover\:fill-dark-desaturated-blue:hover{
+  fill: hsl(236, 21%, 26%);
+}
+
+.hover\:fill-grayish-blue:hover{
+  fill: hsl(237, 18%, 59%);
+}
+
+.hover\:fill-white:hover{
+  fill: #fff;
+}
+
+.hover\:text-red-500:hover{
+  --tw-text-opacity: 1;
+  color: rgb(239 68 68 / var(--tw-text-opacity));
 }
 
 @media (min-width: 768px){

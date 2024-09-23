@@ -59,5 +59,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("./dist/plugins/openVariant")],
 };

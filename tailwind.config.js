@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./dist/*.{html,js}"],
+  safelist: ["animate-flip-down", "animate-flip-down-forNum"],
   theme: {
     extend: {
       colors: {
@@ -38,12 +39,12 @@ module.exports = {
           },
         },
 
-        "flip-up": {
+        "flip-down-forNum": {
           0: {
-            transform: "rotateX(0deg)",
+            transform: "rotateX(-45deg)",
           },
           "50%": {
-            transform: "rotateX(180deg)",
+            transform: "rotateX(-90deg)",
           },
 
           "100%": {
@@ -54,7 +55,7 @@ module.exports = {
 
       animation: {
         "flip-down": "flip-down 300ms ease-in-out",
-        "flip-up": "flip-up 2000ms ease-in-out",
+        "flip-down-forNum": "flip-down-forNum 400ms ease-in-out",
       },
     },
   },

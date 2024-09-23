@@ -596,21 +596,8 @@ html {
   z-index: 30;
 }
 
-.z-50{
-  z-index: 50;
-}
-
-.z-0{
-  z-index: 0;
-}
-
 .m-4{
   margin: 1rem;
-}
-
-.mx-auto{
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .flex{
@@ -619,6 +606,10 @@ html {
 
 .grid{
   display: grid;
+}
+
+.hidden{
+  display: none;
 }
 
 .size-full{
@@ -671,6 +662,24 @@ html {
 
 .animate-flip-down{
   animation: flip-down 300ms ease-in-out;
+}
+
+@keyframes flip-down-forNum{
+  0{
+    transform: rotateX(-45deg);
+  }
+
+  50%{
+    transform: rotateX(-90deg);
+  }
+
+  100%{
+    transform: rotateX(0deg);
+  }
+}
+
+.animate-flip-down-forNum{
+  animation: flip-down-forNum 400ms ease-in-out;
 }
 
 .place-items-center{
@@ -921,5 +930,21 @@ html {
 
   .max-xm\:text-\[0\.4rem\]{
     font-size: 0.4rem;
+  }
+
+  .max-xm\:text-\[1rem\]{
+    font-size: 1rem;
+  }
+
+  .max-xm\:text-\[1\.5rem\]{
+    font-size: 1.5rem;
+  }
+
+  .max-xm\:text-\[1\.2rem\]{
+    font-size: 1.2rem;
+  }
+
+  .max-xm\:text-\[1\.3rem\]{
+    font-size: 1.3rem;
   }
 }

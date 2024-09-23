@@ -25,7 +25,7 @@
       }
     </style>
   </head>
-  <body>
+  <body class="hidden">
     <main
       class="relative w-full grid place-items-center p-2 min-h-[100vh] bg-cover bg-gradient-to-b from-mostly-dark-blue via-very-dark-blue to-kinda-red"
     >
@@ -39,7 +39,7 @@
       <div class="grid justify-items-center gap-16 m-4 w-full md:max-w-[800px]">
         <section class="header_section z-10">
           <h1
-            class="text-white font-fw-bold text-[2rem] tracking-[0.3rem] md:tracking-[0.5rem] md:text-[1.5rem] text-center"
+            class="text-white font-fw-bold text-[2rem] tracking-[0.3rem] md:tracking-[0.5rem] md:text-[1.5rem] max-xm:text-[1.3rem] text-center"
           >
             WE'RE LAUNCHING SOON
           </h1>
@@ -172,16 +172,19 @@
           </div>
         </section>
       </div>
+
+      <div class="attribution w-full absolute bottom-0">
+        Challenge by
+        <a
+          href="https://www.frontendmentor.io/challenges/launch-countdown-timer-N0XkGfyz-"
+          target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Regret546</a>.
+      </div>
     </main>
 
-    <div class="attribution w-full absolute bottom-0">
-      Challenge by
-      <a
-        href="https://www.frontendmentor.io/challenges/launch-countdown-timer-N0XkGfyz-"
-        target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Regret546</a>.
-    </div>
-    <script src="/dist/js/app.js"></script>
+    <script src="/dist/js/app.js" defer></script>
+    <script src="/dist/js/onload.js" defer></script>
+    <script></script>
   </body>
 </html>

@@ -41,30 +41,35 @@ function updateDuration() {
 
     // Detect changes in days, hours, minutes, seconds and add animation
     if (currentSeconds !== prevSeconds) {
-      seconds.innerText = currentSeconds;
-      prevSeconds = currentSeconds;
+      setTimeout(() => {
+        seconds.innerText = currentSeconds;
+        prevSeconds = currentSeconds;
+      }, 100);
       flipDown(seconds.closest(".card").querySelector("#topCard"), seconds);
     }
 
     if (currentMinutes !== prevMinutes) {
-      console.log("Minutes changed");
-      minutes.innerText = currentMinutes;
-      prevMinutes = currentMinutes;
       flipDown(minutes.closest(".card").querySelector("#topCard"), minutes);
+      setTimeout(() => {
+        minutes.innerText = currentMinutes;
+        prevMinutes = currentMinutes;
+      }, 100);
     }
 
     if (currentHours !== prevHours) {
-      console.log("Hours changed");
-      hours.innerText = currentHours;
-      prevHours = currentHours;
       flipDown(hours.closest(".card").querySelector("#topCard"), hours);
+      setTimeout(() => {
+        hours.innerText = currentHours;
+        prevHours = currentHours;
+      }, 100);
     }
 
     if (currentDays !== prevDays) {
-      console.log("Days changed");
-      days.innerText = currentDays;
-      prevDays = currentDays;
       flipDown(days.closest(".card").querySelector("#topCard"), days);
+      setTimeout(() => {
+        days.innerText = currentDays;
+        prevDays = currentDays;
+      }, 100);
     }
   }
 
